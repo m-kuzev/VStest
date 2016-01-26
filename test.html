@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+(function() {
+   var pasteCatcher = document.createElement('div');
+   pasteCatcher.setAttribute('contenteditable', '');
+   pasteCatcher.setAttribute('id', 'pasteCatcher');
+   pasteCatcher.style.opacity = 1;
+   document.body.appendChild(pasteCatcher);
+	   var child = pasteCatcher.childNodes[0];
+	   pasteCatcher.innerHTML = '';
+	  //  if (child) {
+			// if (child.tagName === 'IMG') {
+			// 	var pastedImage = new Image();
+			// 	pastedImage.src = child.src;
+			// }	   	
+	  //  }
+
+})();
+
+</script>
+</body>
+</html>

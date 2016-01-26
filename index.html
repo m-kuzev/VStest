@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//jashkenas.github.io/underscore/underscore-min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+	<a class="links" data-url="http://www.google.com" target="_blank">Google</a>
+	<a class="links" data-url="http://www.yahoo.com" target="_blank">Yahoo</a>
+	<a class="links" data-url="http://www.microsoft.com" target="_blank">Microsoft</a>
+	<!-- <div>
+	  	<button id='open'>Open Tabs</button>
+	  	<button id='change'>Change Link</button>
+	</div> -->
+
+	<script>
+		$('.links').on('touchend', function(e) {
+	        openTab('http://www.abv.bg');
+	    });
+
+
+	    function openTab(url) {
+	    // Create link in memory
+		    var a = window.document.createElement("a");
+		    a.target = '_blank';
+		    a.href = url;
+		 
+		    // Dispatch fake click
+		    var e = window.document.createEvent("MouseEvents");
+		    e.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+		    a.dispatchEvent(e);
+		};
+	</script>
+
+</body>
+</html>

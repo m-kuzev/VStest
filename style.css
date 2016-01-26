@@ -1,0 +1,150 @@
+body {
+    	padding: 0;
+    	margin: 0;
+    }
+
+    ul {
+    	list-style-type: none;
+    }
+
+    div, p, h4 {
+    	margin: 0;
+    	padding: 0;
+    }
+
+    #cookie-policy-wrapper {
+		position: absolute;
+		top: 2%;
+		left: 10%;	
+		width: 80%;
+		background-color: #004833;
+		border-radius: 5px;
+	  	max-height: 95%;
+	  	overflow: auto;
+	}
+		
+		#policy-header-wrapper {
+			background-color: #006655;
+			padding: 20px 5px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+			#policy-header {
+				margin: 0;
+				color: #C9DA2A;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 1.5em;
+			}
+
+			#policy-close {
+				position: absolute;
+				top: 13px;
+				right: 6px;
+				width: 36px;
+				height: 27px;
+				background: url('../images/policy-close.png') no-repeat top center;
+				background-size: 75%;
+			}
+
+		#policy-description-text {
+			background-color: #FFFFFF;
+			height: 150px;
+			color: #000000;
+			overflow: auto;
+			padding: 10px 15px;
+		}	
+			/*.description-header {
+			}
+			.description {
+				text-align: justify;
+			}*/
+
+		#policy-info-wrapper {
+			overflow: auto;
+			height: 350px;
+		}
+
+		#policy-info-wrapper li:not(:first-child) {
+			margin-top: 5px;
+		}
+
+			.policy-info-header {
+				cursor: pointer;
+				position: relative;
+				width: 2000px;
+				display: table-cell;
+				vertical-align: middle;
+				text-transform: uppercase;
+				font-weight: bold;
+				padding: 4% 30px;
+				background: #31943e;
+				background: -moz-linear-gradient(top, #31943e 0%, #2d8839 40%, #287a33 60%, #236a2c 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#31943e), color-stop(40%,#2d8839), color-stop(60%,#287a33), color-stop(100%,#236a2c));
+				background: -webkit-linear-gradient(top, #31943e 0%,#2d8839 40%,#287a33 60%,#236a2c 100%);
+			}
+				.policy-info-header.active {
+					background: #31953E;
+				}
+
+			.policy-info-dropdown {
+				position: absolute;
+				right: 15px;
+				top: 27%;
+				width: 40px;
+				height: 33px;
+				background: url('../images/policy_right_arrow.png') no-repeat center center;
+				background-size: 80%;
+				-webkit-transition: transform 0.3s ease-in-out;
+	    		transition: transform 0.3s ease-in-out;
+			}
+				.policy-info-dropdown.active {
+					background-size: 80%;
+					-webkit-transform: rotate(90deg);
+					transform: rotate(90deg);
+				}
+
+
+			.policy-info-content {
+				position: relative;
+				max-height: 0;
+				background-color: #FFFFFF;
+				color: #000000;
+				padding: 0 15px;
+				overflow: auto;
+				-webkit-transition: max-height 0.3s ease-in-out;
+	    		transition: max-height 0.3s ease-in-out;
+			}
+				.policy-info-content.active {
+					max-height: 300px;
+				}
+
+			.policy-info-checkbox {
+				cursor: pointer;
+				width: 41px;
+				height: 41px;
+				position: absolute;
+				right: 16px;
+				top: 4px;
+				background: url('../images/policyBox_unchecked.png') no-repeat center center;
+				background-size: 80%;
+			}
+				.policy-info-checkbox.checked {
+					background: url('../images/policyBox_checked.png') no-repeat center center;
+					background-size: 80%;
+				}
+
+			#policy-ok-btn {
+				display: block;
+				margin: 10px auto;
+				width: 75px;
+				height: 40px;
+				background-color: #CFE007;
+				box-shadow: 0px 0px 1px #000000;
+				border: none;
+				border-radius: 5px;
+				color: #484848;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 20px;
+			}
